@@ -3,11 +3,11 @@ var assert = require('assert')
   , Coinbase = require('../lib/coinbase');
 
 describe('Coinbase', function () {
-  var coinbase = new Coinbase('3ddda586a76b03084fc995a47ae7fb16ff3da9825dfbd9b07f3db84b3ed3ebfe');
+  var coinbase = new Coinbase(process.env.COINBASE_API_KEY);
 
   describe('api_key', function () {
     it('should assign api_key when passed to the constructor', function () {
-      assert.equal('3ddda586a76b03084fc995a47ae7fb16ff3da9825dfbd9b07f3db84b3ed3ebfe', coinbase.api_key)
+      assert.equal(process.env.COINBASE_API_KEY, coinbase.api_key)
     })
   })
 
