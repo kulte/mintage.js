@@ -1,0 +1,25 @@
+{
+    "name": "coinbase"
+  , "version": "0.0.1"
+  , "description": "Coinbase API client for node.js"
+  , "keywords": ["bitcoin", "coinbase", "api", "client", "library"]
+  , "homepage": "https://github.com/kulte/coinbase.js"
+  , "bugs": {
+        "url": "https://github.com/kulte/coinbase.js/issues"
+      , "email": "zafriedman@gmail.com"
+  }
+  , "author": "Zachary Friedman <zafriedman@gmail.com> (http://betareduction.tumblr.com)"
+  , "main": "coinbase"
+  , "repository": {
+        "type": "git"
+      , "url": "git@github.com:kulte/coinbase.js.git"
+  }
+  , "dependencies": {
+        "superagent": "0.14.2"
+      , "underscore": "1.4.4"
+      , "mocha": "1.9.0"
+  }
+  , "engines": {
+        "node": "*"
+  }
+}
