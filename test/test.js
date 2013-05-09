@@ -1,9 +1,9 @@
 var assert = require('assert')
   , _ = require('underscore')
-  , Coinbase = require('../lib/coinbase');
+  , Mintage = require('../lib/mintage');
 
-describe('Coinbase', function () {
-  var coinbase = new Coinbase(process.env.COINBASE_API_KEY);
+describe('Mintage', function () {
+  var coinbase = new Mintage(process.env.COINBASE_API_KEY);
 
   describe('api_key', function () {
     it('should assign api_key when passed to the constructor', function () {
@@ -48,7 +48,7 @@ describe('Coinbase', function () {
       })
 
       it('should return invalid api key with bad credentials when called', function (done) {
-        var coinbase = new Coinbase('not_an_api_key');
+        var coinbase = new Mintage('not_an_api_key');
         coinbase.account.receiveAddress(function (error, res) {
           if (error) {
             assert.equal('Coinbase error: Invalid api_key', error.message); done();

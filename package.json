@@ -1,18 +1,18 @@
 {
-    "name": "coinbase"
+    "name": "mintage"
   , "version": "0.0.1"
   , "description": "Coinbase API client for node.js"
   , "keywords": ["bitcoin", "coinbase", "api", "client", "library"]
-  , "homepage": "https://github.com/kulte/coinbase.js"
+  , "homepage": "https://github.com/kulte/mintage.js"
   , "bugs": {
-        "url": "https://github.com/kulte/coinbase.js/issues"
+        "url": "https://github.com/kulte/mintage.js/issues"
       , "email": "zafriedman@gmail.com"
   }
   , "author": "Zachary Friedman <zafriedman@gmail.com> (http://betareduction.tumblr.com)"
-  , "main": "coinbase"
+  , "main": "mintage"
   , "repository": {
         "type": "git"
-      , "url": "git@github.com:kulte/coinbase.js.git"
+      , "url": "git@github.com:kulte/mintage.js.git"
   }
   , "dependencies": {
         "superagent": "0.14.2"
